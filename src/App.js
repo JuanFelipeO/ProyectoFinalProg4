@@ -1,9 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+
+function hv()
+{
+  <h1>Hola soy la funcion de la hoja de vida</h1>
+}
 
 function App() {
   return (
-    <nav id="menu">
+    <nav class="menu">
       <ul>
         <li><a href="#">Enlace 1</a></li>
         <li><a href="#">Enlace 2</a>
