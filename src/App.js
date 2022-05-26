@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import {
   BrowserRouter,
@@ -6,29 +5,40 @@ import {
   Route,
   Link
 } from "react-router-dom";
+//import {Indexhvfelipe} from './hojasdevida/Hoja_de_vida_Felipe/Indexhvfelipe';
+import {Hola} from './hojasdevida/Hoja_de_vida_Felipe/Hola';
 
-function hv()
-{
-  <h1>Hola soy la funcion de la hoja de vida</h1>
+
+
+function Chao(){
+  return (
+    <div>
+      <h1>Entraste en chao</h1>
+    </div>
+  );
 }
 
 function App() {
   return (
-    <nav class="menu">
-      <ul>
-        <li><a href="#">Enlace 1</a></li>
-        <li><a href="#">Enlace 2</a>
-          <ul>
-            <li><a href="#">Enlace 2.1</a></li>
-            <li><a href="#">Enlace 2.2</a></li>
-            <li><a href="#">Enlace 2.3</a></li>
-          </ul>
-      </li>
-      <li><a href="#">Enlace 3</a></li>
-      <li><a href="#">Enlace 4</a></li>
-      <li><a href="#">Enlace 5</a></li>
-    </ul>
-    </nav>
+    <BrowserRouter>
+      <nav class="menu">
+        <ul>
+        <li>
+            <Link to="/"> Hoja de vida Juan Felipe</Link>
+          </li>
+          <li>
+          <Link to="/hojadevidajuanfelipe"> Hoja de vida Maria Fernanda</Link>
+          </li>
+          <li>
+          <Link to="/contactenos"> Contactanos</Link>
+          </li>
+        </ul>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Chao/>}/>
+        <Route path="/contactenos" element={<Hola/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
