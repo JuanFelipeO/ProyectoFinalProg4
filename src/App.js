@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import { HojaVidaFelipe } from './hojasdevida/Hoja_de_vida_Felipe/HojaVidaFelipe';
 import { HojaVidaMafe } from './hojasdevida/Hoja_de_vida_Mafe/HojavidaMafe';
+import { Contacto } from './hojasdevida/contacto'
 
 
 
@@ -41,7 +42,7 @@ function App() {
         <Route path="/" element={<Chao/>}/>
         <Route path="/hojadeviajuanfelipe" element={<HojaVidaFelipe/>}/>
         <Route path="/hojadevidamariafernanda" element={<HojaVidaMafe/>}/>
-        <Route path="/contactenos" element={<Chao/>}/>
+        <Route path="/contactenos" element={<Contacto/>}/>
       </Routes>
     </BrowserRouter>
   );
