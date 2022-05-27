@@ -7,15 +7,22 @@ import {
 } from "react-router-dom";
 import { HojaVidaFelipe } from './hojasdevida/Hoja_de_vida_Felipe/HojaVidaFelipe';
 import { HojaVidaMafe } from './hojasdevida/Hoja_de_vida_Mafe/HojavidaMafe';
-import { Contacto } from './hojasdevida/contacto'
-
-
+import { Contacto } from './hojasdevida/contacto';
+import Figure from 'react-bootstrap/Figure';
 
 function Chao(){
   return (
-    <div>
-      <h1>Entraste en chao</h1>
-    </div>
+    <Figure>
+      <Figure.Image
+        width={171}
+        height={180}
+        alt="171x180"
+        src="./Universidad-de-Manizales.png"
+      />
+      <Figure.Caption>
+        Futuros ingenieros de sistemas
+      </Figure.Caption>
+    </Figure>
   );
 }
 
